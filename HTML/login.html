@@ -1,0 +1,242 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> 
+
+             
+
+      <style type="text/css">
+        .img{
+          border-radius: 15px;
+        }
+        .img2{
+          max-width: 18rem;
+        }
+        .qr{
+          background-color:grey;
+          border-radius: 15px;
+        } 
+        .centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .nopadding {
+        padding: 0px !important;
+        }
+        .nomargin{
+        margin-left:0px !important; 
+        margin-right:0px !important;
+        }
+        .nota{
+          display:block;
+          width:130px;
+          height:21px;
+          background: #76003A url(./bar.png) repeat-y;
+        }
+        .nota:hover{
+          background-position:0px 0px !important;
+        }
+        .nota i{
+          display: block;
+          width: 130px;
+          height: 100%;
+          background: url(./moldura_estrela.png) repeat-x;
+        }
+        .nota:hover{background-position:0px 0px !important;}
+        .nota>i>a:hover ~ a:link{opacity:1;}    
+
+        .nota a:link{
+          display:block;
+          float:left;
+          width:20%;
+          opacity:0;
+        }
+        .nota img{
+          width:100%;
+          height:auto;
+          background:#76003A;
+        }
+        .nota>i>a:hover ~ a:link{
+          opacity:1;
+        }
+        .formataContainer {
+        border-color: lightgrey;
+        border-style: solid;
+        border-radius: 4px;
+        border-width: 2px;
+        }
+
+        .panel-login {
+  border-color: #ccc;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+  color: #00415d;
+  background-color: #fff;
+  border-color: #fff;
+  text-align:center;
+}
+.panel-login>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+  color: #029f5b;
+  font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+.btn2{
+  background-color: #1CB94E;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #1CB94A;
+}
+.btn2:hover,
+.btn2:focus {
+  color: #fff;
+  background-color: #1CA347;
+  border-color: #1CA347;
+}
+</style>
+
+      <title>SmartCar3D</title>
+    </head>
+    <body>
+
+      <!-- Barra de navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+          <a class="navbar-brand" href="home.html">SmartCar3D</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSanduiche">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+   
+          <div class="collapse navbar-collapse" id="menuSanduiche">
+            <ul class="navbar-nav mr-auto "> 
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Produtos.html">Produtos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Forum.html">Fórum</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+
+            </ul>
+              
+              <a class="btn btn-outline-success mr-sm-2" href="./login.html">Entrar</a>
+              <a class="btn btn-outline-success mr-sm-2 " href="./register.html">Registrar-se</a>
+              <a href="./carrinho.html"><img class="mr-sm-2" src="carrinho.png"  height="35px" width="35px"></a>
+              
+
+       
+        </div>
+
+      </nav>
+
+
+
+
+
+
+	
+<div class="container ">
+      <div class="row " style="margin-top:100px;">
+      <div class="col-md-6 col-md-3 centered ">
+        <div class="panel panel-login formataContainer ">
+          <div class="panel-heading">
+          <div class="container ">
+            <div class="row mt-2">
+              <div class="col-xl-5 col-lg-5 col-md-3 col-sm-5 col-5 centered">
+                <a href="#" class="active" id="login-form-link">Entrar</a>
+              </div>
+              <div class="col-xl-5 col-lg-1 col-md-1 col-sm-5 col-5 centered ">
+                <a href="./register.html" id="register-form-link">Registrar-se</a>
+              </div>
+            </div>
+            <hr class="my-2">
+          </div>
+          </div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" method="post" role="form" style="display: block;">
+									<div class="form-group mr-3 ml-3">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" required placeholder="Nome de Usuário" value="">
+									</div>
+									<div class="form-group mr-3 ml-3">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" required placeholder="Senha">
+									</div>
+									<div class="form-group mr-3 ml-3">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3 centered">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn2" value="entrar">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

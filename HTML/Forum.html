@@ -1,0 +1,202 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <script src="https://use.fontawesome.com/01f6939522.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> 
+
+             
+
+      <style type="text/css">
+        .img{
+          border-radius: 15px;
+        }
+        .img2{
+          max-width: 18rem;
+        }
+        .qr{
+          background-color:grey;
+          border-radius: 15px;
+        } 
+        .centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .nopadding {
+        padding: 0px !important;
+        }
+        .nomargin{
+        margin-left:0px !important; 
+        margin-right:0px !important;
+        }
+        .nota{
+          display:block;
+          width:130px;
+          height:21px;
+          background: #76003A url(./bar.png) repeat-y;
+        }
+        .nota:hover{
+          background-position:0px 0px !important;
+        }
+        .nota i{
+          display: block;
+          width: 130px;
+          height: 100%;
+          background: url(./moldura_estrela.png) repeat-x;
+        }
+        .nota:hover{background-position:0px 0px !important;}
+        .nota>i>a:hover ~ a:link{opacity:1;}    
+
+        .nota a:link{
+          display:block;
+          float:left;
+          width:20%;
+          opacity:0;
+        }
+        .nota img{
+          width:100%;
+          height:auto;
+          background:#76003A;
+        }
+        .nota>i>a:hover ~ a:link{
+          opacity:1;
+        }
+        hr{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        clear: both;
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+        background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+        background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+        background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+      </style>
+
+      <title>SmartCar3D</title>
+    </head>
+    <body>
+
+      <!-- Barra de navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+          <a class="navbar-brand" href="home.html">SmartCar3D</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSanduiche">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+   
+          <div class="collapse navbar-collapse" id="menuSanduiche">
+            <ul class="navbar-nav mr-auto "> 
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Produtos.html">Produtos</a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Fórum</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+
+            </ul>
+              
+              <a class="btn btn-outline-success mr-sm-2" href="./login.html" >Entrar</a>
+              <a class="btn btn-outline-success mr-sm-2 " href="./register.html" >Registrar-se</a>
+              <a href="./carrinho.html"><img class="mr-sm-2" src="carrinho.png"  height="35px" width="35px"></a>
+              
+
+       
+        </div>
+
+      </nav>
+
+      <!-- Fim Barra de navegação -->   
+      <!-- jumbotron -->
+
+
+
+    <div class="container">
+      <div class="jumbotron">
+        
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+          <h1 class="display-3 text-center"><img src="volante.png" style="height:90px; width:90px;" >SmartCar3D</h1>
+        </div>
+          <hr class="my-2">
+        <h1 class=" text-center"><i class="fa fa-question" aria-hidden="true"></i> Perguntas Frequentes</h1>
+
+  <div class="container">       
+    <div class="row">
+      <div class="col-xl-4 col-lg-5 col-md-4 col-sm-5 col-6 centered">
+        <div class="card text-black bg-secondary mb-3 img2">
+          <div class="card-header h5 ">A bateria é recaregavel?</div>
+            <div class="card-body">
+              <p class="card-text ">Sim, é só tirar a bateria do SmartCar3D, conectar no carregador e colocar na tomada.</p>
+            </div>
+        </div>
+      </div>
+      
+
+      <div class="col-xl-4 col-lg-5 col-md-4 col-sm-5 col-6 centered ">
+        <div class="card text-black bg-secondary mb-3 img2" >
+          <div class="card-header h5">Como controla o carrinho?</div>
+            <div class="card-body">
+              <p class="card-text">É so baixar o aplicativo em nosso site para controla a movimentação dele.</p>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-4 col-lg-5 col-md-4 col-sm-5 col-6 centered">
+        <div class="card text-black bg-secondary mb-3 img2" >
+          <div class="card-header h5 ">Vai pilha no carrinho?</div>
+            <div class="card-body">
+              <p class="card-text">O SmartCar3D usa bateria recarregavel.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-5 col-md-4 col-sm-5 col-6 centered ">
+        <div class="card text-black bg-secondary mb-3 img2" >
+          <div class="card-header h5">O carrinho é resistente?</div>
+            <div class="card-body">
+              <p class="card-text">Sim, todas as peças foram projetadas com uma impressora 3D, portanto o SmartCar3S é bem robusto.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-5 col-md-4 col-sm-5 col-6 centered">
+        <div class="card text-black bg-secondary mb-3 img2" >
+          <div class="card-header h5">O carrinho é rapido?</div>
+            <div class="card-body">
+              <p class="card-text">O SmartCar3D é bem rápido, pode vencer um humano em uma corrida.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-5 col-md-4 col-sm-5 col-6 centered">
+        <div class="card text-black bg-secondary mb-3 img2" >
+          <div class="card-header h5">É facil de copntrolalo?</div>
+            <div class="card-body">
+              <p class="card-text">Sim, tem instruçoes no aplicativo do controle remoto do SmartCar3D.</p>
+            </div>
+        </div>
+      </div>
+
+    
+</div>
+</div>
+</div>
+</body>
+</html>

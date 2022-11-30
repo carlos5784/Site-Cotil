@@ -1,0 +1,193 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> 
+
+             
+
+      <style type="text/css">
+        .img{
+          border-radius: 15px;
+        }
+        .img2{
+          border-radius: 10px;
+        }
+        .qr{
+          background-color:grey;
+          border-radius: 15px;
+        } 
+        .centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .nopadding {
+        padding: 0 !important;
+        }
+        .nota{
+          display:block;
+          width:130px;
+          height:21px;
+          background: #76003A url(./bar.png) repeat-y;
+        }
+        .nota:hover{
+          background-position:0px 0px !important;
+        }
+        .nota i{
+          display: block;
+          width: 130px;
+          height: 100%;
+          background: url(./moldura_estrela.png) repeat-x;
+        }
+        .nota:hover{background-position:0px 0px !important;}
+        .nota>i>a:hover ~ a:link{opacity:1;}    
+
+        .nota a:link{
+          display:block;
+          float:left;
+          width:20%;
+          opacity:0;
+        }
+        .nota img{
+          width:100%;
+          height:auto;
+          background:#76003A;
+        }
+        .nota>i>a:hover ~ a:link{
+          opacity:1;
+        }
+        hr{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        clear: both;
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+        background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+        background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+        background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+      </style>
+
+      <title>SmartCar3D</title>
+    </head>
+    <body>
+
+      <!-- Barra de navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+          <a class="navbar-brand" href="home.html">SmartCar3D</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuSanduiche">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+   
+          <div class="collapse navbar-collapse" id="menuSanduiche">
+            <ul class="navbar-nav mr-auto "> 
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Produtos.html">Produtos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Forum.html">Fórum</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+
+            </ul>
+              
+              <a class="btn btn-outline-success mr-sm-2" href="./login.html">Entrar</a>
+              <a class="btn btn-outline-success mr-sm-2 " href="./register.html" >Registrar-se</a>
+              <a href="./carrinho.html"><img class="mr-sm-2" src="carrinho.png"  height="35px" width="35px"></a>
+              
+
+       
+        </div>
+
+      </nav>
+
+      <!-- Fim Barra de navegação -->   
+      <!-- jumbotron -->
+
+
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <h1 class="display-3 text-center"><img src="volante.png" style="height:90px; width:90px;" >SmartCar3D</h1>
+        </div>
+          <hr class="my-2">
+    <div class="container">
+      <div class="row">
+          <div class="nopadding col-xl-5 col-lg-6 col-md-12 col-sm-12 ">
+            <img src="carro3d.jpg" style="height:300px; width:450px;" class="img mb-4 centered ">
+          </div>
+          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 ">
+            <p class="lead ml-4 centered ">SmartCar é um carro de controle remoto impresso em 3D que usa um minimo absoluto de peças não impressas Isso significa que o fornecimento de peças para o SmartCar é barato e fácil. Nos nem usamos parafusos! SmartCar apenas se encaixa, e leva apenas alguns minutos para montar. Mais tiros de imprensa de Smartcar aqui.</p>
+          </div>
+      
+      <div class="nopadding col-xl-12 col-lg-12 col-md-7 col-sm-10 col-10 centered ">
+        <table class="qr">  
+          <tr>      
+            <td><img src="qrcode.jpg" height="130px" width="130px" class="img2 ml-2 mt-2 mb-2" ></td> 
+            <td><p class="lead ml-3 mt-4 mr-2">Baixe já o aplicativo<br>que possibilitará<br>o controle do carrinho.</p></td> 
+          </tr>
+        </table>
+      </div>
+
+
+
+
+          <div class="nopadding col-xl-4 col-lg-5 col-md-9 col-sm-12 mr-2 ">
+            <div class="mt-4 ">
+              <textarea name="comentario" rows="2" cols="20" placeholder="Deixe um comentário!" class="ptcShadedBox" style="height:150px;width:350px;box-sizing: border-box;" ></textarea>
+            </div>
+          </div>
+
+      <div class="nopadding col-xl-2 col-lg-3 col-md-12 col-sm-12 mt-3" >
+      
+        <div>
+            <a>Avalie-nos</a>
+          <div class=" mb-2" style="background: #98004B; border-radius: 5px ;  margin: 0 ; padding:10px; width: 150px;">
+            <span class="nota" id="nota" style="background-position: -55px 0px;">
+            <i>
+            <a href="javascript:alert('1 estrela');void(0);"><img class="mb-2" src="./moldura_estrela.png"></a>
+            <a href="javascript:alert('2 estrelas');void(0);"><img class="mb-2" src="./moldura_estrela.png"></a>
+            <a href="javascript:alert('3 estrelas');void(0);"><img class="mb-2" src="./moldura_estrela.png"></a>
+            <a href="javascript:alert('4 estrelas');void(0);"><img class="mb-2" src="./moldura_estrela.png"></a>
+            <a href="javascript:alert('5 estrelas');void(0);"><img class="mb-2" src="./moldura_estrela.png"></a>
+            </i>
+            </span>
+          </div>
+          <div class=" btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-success active">
+              <input type="radio" name="enviar" id="enviar" autocomplete="off" >Enviar
+            </label>
+          </div>
+        </div>
+      </div>
+
+        
+      
+ </div>
+ </div>
+</div>
+</div>       
+      
+
+    </body>
+  </html>
